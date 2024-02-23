@@ -105,12 +105,12 @@ fn find_soccer_team_with_minimun_spread(filename: &str) -> io::Result<String>
 }
 
 fn main() {
-    match find_soccer_team_with_minimun_spread("./../football.dat") {
+    match find_soccer_team_with_minimun_spread("./data/football.dat") {
         Ok(team_name) => println!("The team with the smallest difference in ‘for’ and ‘against’ goals is {}",team_name),
         Err(e) => println!("Error reading football data {}", e)
         
     }
-    match find_day_with_min_temp_spread("./../weather.dat") {
+    match find_day_with_min_temp_spread("./data/weather.dat") {
         Ok(day) => println!("Day with smallest temperature spread is {}",day),
         Err(e) => println!("Error reading weather data {}", e)
         
